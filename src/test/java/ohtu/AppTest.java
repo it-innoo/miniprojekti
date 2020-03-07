@@ -5,6 +5,11 @@
  */
 package ohtu;
 
+<<<<<<< HEAD
+=======
+import org.junit.Test;
+
+>>>>>>> 3f1c7c07fa8b0018d8ec5255ec7f385a19e1919e
 /**
  *
  * @author jukka
