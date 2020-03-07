@@ -6,10 +6,7 @@
 .vscode/
 bin/
 build/
-<<<<<<< HEAD
-nbproject
-=======
->>>>>>> 3f1c7c07fa8b0018d8ec5255ec7f385a19e1919e
+nbproject/
 # Ignore Gradle project-specific cache directory
 .gradle
 
