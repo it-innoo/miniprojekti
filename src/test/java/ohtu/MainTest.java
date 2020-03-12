@@ -9,8 +9,8 @@ package ohtu;
  *
  * @author jukka
  */
-public final class App {
-    public static void main(String[] args) {
-        System.out.println("Hello Gradle!");
-    }
+public class MainTest {
+    
+    
+    
 }
