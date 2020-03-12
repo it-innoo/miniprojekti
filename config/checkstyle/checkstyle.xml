@@ -208,7 +208,17 @@
 
 		<!-- 6 Programming Practices -->
 		<module name="NoFinalizer"/>
+		<module name="MethodLength">
+        	<property name="max" value="5"/>
+	        <property name="countEmpty" value="false"/>
+    	</module>
+		<module name="NestedIfDepth"/>
+		<module name="NestedForDepth"/>
+		<module name="CyclomaticComplexity">
+			<property name="max" value="15"/>
+		</module>
 
+		<!-- Misc: move right place -->
 		<module name="GenericWhitespace">
             <message key="ws.followed"
              value="GenericWhitespace ''{0}'' is followed by whitespace."/>
