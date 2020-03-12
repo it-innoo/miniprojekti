@@ -9,5 +9,5 @@ package ohtu.io;
 public interface IO {
     int nextInt();
     
-    void print(String s);
+    void print(String str);
 }

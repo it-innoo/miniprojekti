@@ -4,7 +4,7 @@ package ohtu;
 import ohtu.io.KonsoliIO;
 
 /**
- * LinnkiVinkkiKirjasto
+ * LinkkiVinkkiKirjasto.
  * 
  * @author jukka
  */

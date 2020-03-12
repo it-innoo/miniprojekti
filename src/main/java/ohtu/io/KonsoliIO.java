@@ -9,8 +9,8 @@ package ohtu.io;
 public final class KonsoliIO implements IO {
 
     @Override
-    public void print(final String s) {
-        System.out.println(s);
+    public void print(final String str) {
+        System.out.println(str);
     }
 
     @Override
