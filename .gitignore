@@ -3,11 +3,11 @@
 .gradle/
 .project
 .settings/
-.swp
+*.swp
 .vscode/
 bin/
 build/
-nbproject/
+/nbproject/
 # Ignore Gradle project-specific cache directory
 .gradle
 
