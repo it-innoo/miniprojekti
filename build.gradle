@@ -19,6 +19,7 @@ mainClassName='ohtu.Main'
 
 dependencies {
     implementation 'junit:junit:4.13'
+    
 }
 
 jar {

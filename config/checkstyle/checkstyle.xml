@@ -24,9 +24,14 @@
         <property name="ignorePattern" value="^package.*|^import.*|a href|href|http://|https://|ftp://"/>
     </module>
 
+	<module name="FileLength">
+		<property name="max" value="250"/>
+	</module>
+
     <module name="TreeWalker">
 		<!-- Source file basics -->
 		<module name="OuterTypeFilename"/>
+		<module name="ConstantName"/>
 		<module name="IllegalTokenText">
 			<property name="tokens" value="STRING_LITERAL, CHAR_LITERAL"/>
             <property name="format"
@@ -209,11 +214,16 @@
 		<!-- 6 Programming Practices -->
 		<module name="NoFinalizer"/>
 		<module name="MethodLength">
-        	<property name="max" value="5"/>
+        	<property name="max" value="15"/>
 	        <property name="countEmpty" value="false"/>
     	</module>
 		<module name="NestedIfDepth"/>
 		<module name="NestedForDepth"/>
+<!--
+		<module name="ParameterNumber">
+			<property name="max" value="5"/>
+		</module>
+-->
 		<module name="CyclomaticComplexity">
 			<property name="max" value="15"/>
 		</module>

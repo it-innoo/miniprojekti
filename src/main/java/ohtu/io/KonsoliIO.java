@@ -1,13 +1,20 @@
 
 package ohtu.io;
 
+import java.util.Scanner;
+
 /**
  * TextIO.
  * 
  * @author jukka
  */
 public final class KonsoliIO implements IO {
+    private final Scanner lukija;
 
+    public KonsoliIO() {
+        lukija = new Scanner(System.in);
+    }
+    
     @Override
     public void print(final String str) {
         System.out.println(str);
@@ -15,9 +22,13 @@ public final class KonsoliIO implements IO {
 
     @Override
     public int nextInt() {
-        return 0;
-        //throw new UnsupportedOperationException("Not supported yet.");
-        //To change body of generated methods, choose Tools | Templates.
+        return Integer.parseInt(lukija.nextLine());
+    }
+
+    @Override
+    public String lueRivi(String prompti) {
+        System.out.print(prompti + " ");
+        return lukija.nextLine();
     }
     
 }
