@@ -2,8 +2,6 @@ package ohtu;
 
 import ohtu.io.IO;
 import ohtu.io.komento.Komentotehdas;
-import ohtu.io.tehdas.Pyynto;
-import ohtu.io.tehdas.Tehdas;
 
 /**
  * Returns an Image object that can then be painted on the screen.
