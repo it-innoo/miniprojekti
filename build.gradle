@@ -6,13 +6,32 @@
  */
 
 plugins {
-	id 'java'
-        id 'application'
-        id 'checkstyle'
+    id 'java'
+    id 'application'
+    id 'checkstyle'
+    id 'jacoco'
+    id "io.freefair.lombok" version "5.0.0-rc6"
+    id 'org.springframework.boot' version '2.2.5.RELEASE'
+    id 'io.spring.dependency-management' version '1.0.9.RELEASE'
 }
 
+project.ext {
+    cucumberVersion = '4.7.4'
+    junitVersion = '4.12'
+    javaxVersion = '2.2'
+    springVersion = '2.2.5.RELEASE'
+    sqliteVersion = '3.30.1'
+}
 repositories {
     jcenter()
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.xerial:sqlite-jdbc:' + sqliteVersion
+    implementation 'javax.persistence:javax.persistence-api:' + javaxVersion
+    implementation 'org.springframework.data:spring-data-jpa:' + springVersion
+    testImplementation 'junit:junit:' + junitVersion
 }
 
 mainClassName='ohtu.Main'

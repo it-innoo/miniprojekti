@@ -14,6 +14,7 @@ public class Tehdas {
 
     static {
         operationMap.put("q", new Lopeta());
+        operationMap.put("h", new Help());
         // more operators
     }
 

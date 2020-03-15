@@ -13,6 +13,4 @@ package ohtu;
  */
 public class MainTest {
     
-    
-    
 }
